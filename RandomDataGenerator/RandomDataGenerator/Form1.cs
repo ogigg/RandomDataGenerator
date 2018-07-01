@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace RandomDataGenerator
@@ -15,6 +16,12 @@ namespace RandomDataGenerator
         public Form1()
         {
             InitializeComponent();
+            textB_FirstName.Text = File.ReadAllText("FirstNames.txt");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
