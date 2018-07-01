@@ -1,0 +1,10 @@
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\bin\Debug\RandomDataGenerator.exe.config
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\bin\Debug\RandomDataGenerator.exe
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\bin\Debug\RandomDataGenerator.pdb
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Debug\RandomDataGenerator.csprojResolveAssemblyReference.cache
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Debug\RandomDataGenerator.Form1.resources
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Debug\RandomDataGenerator.Properties.Resources.resources
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Debug\RandomDataGenerator.csproj.GenerateResource.cache
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Debug\RandomDataGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Debug\RandomDataGenerator.exe
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Debug\RandomDataGenerator.pdb
