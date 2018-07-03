@@ -35,12 +35,15 @@ namespace RandomDataGenerator
             Random rnd = new Random();
             textB_FirstName.Text = FirstName_S[rnd.Next(0,100)];
             textB_LastName.Text = LastName_S[rnd.Next(0, 100)];
-            if (textB_FirstName.Text.ToString().Substring(textB_FirstName.Text.ToString().Length - 2)[0] == 'a') //Wykrywa czy ostatnia litera imienia = a ->kobieta //działa!
+            if (checkB_PolNames.Checked == true)
             {
-                if (textB_LastName.Text.ToString().Substring(textB_LastName.Text.ToString().Length - 2)[0] == 'i')
+                if (textB_FirstName.Text.ToString().Substring(textB_FirstName.Text.ToString().Length - 2)[0] == 'a') //Wykrywa czy ostatnia litera imienia = a ->kobieta //działa!
                 {
-                    textB_LastName.Text = textB_LastName.Text.ToString().Replace("ski","ska");
-                    textB_LastName.Text = textB_LastName.Text.ToString().Replace("cki", "cka");
+                    if (textB_LastName.Text.ToString().Substring(textB_LastName.Text.ToString().Length - 2)[0] == 'i')
+                    {
+                        textB_LastName.Text = textB_LastName.Text.ToString().Replace("ski", "ska");
+                        textB_LastName.Text = textB_LastName.Text.ToString().Replace("cki", "cka");
+                    }
                 }
             }
         }
@@ -58,6 +61,11 @@ namespace RandomDataGenerator
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -33,7 +33,7 @@
             this.textB_LastName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkB_PolNames = new System.Windows.Forms.CheckBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -88,15 +88,16 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Nazwisko";
             // 
-            // checkBox1
+            // checkB_PolNames
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(844, 61);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(107, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Polskie nazwiska";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkB_PolNames.AutoSize = true;
+            this.checkB_PolNames.Location = new System.Drawing.Point(844, 61);
+            this.checkB_PolNames.Name = "checkB_PolNames";
+            this.checkB_PolNames.Size = new System.Drawing.Size(107, 17);
+            this.checkB_PolNames.TabIndex = 5;
+            this.checkB_PolNames.Text = "Polskie nazwiska";
+            this.checkB_PolNames.UseVisualStyleBackColor = true;
+            this.checkB_PolNames.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // richTextBox1
             // 
@@ -112,7 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 280);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkB_PolNames);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textB_LastName);
@@ -134,7 +135,7 @@
         private System.Windows.Forms.TextBox textB_LastName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkB_PolNames;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
