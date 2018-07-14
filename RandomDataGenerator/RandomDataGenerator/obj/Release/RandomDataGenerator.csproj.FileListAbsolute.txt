@@ -7,3 +7,5 @@ C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomData
 C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Release\RandomDataGenerator.csproj.CoreCompileInputs.cache
 C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Release\RandomDataGenerator.exe
 C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Release\RandomDataGenerator.pdb
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Release\RandomDataGenerator.csprojAssemblyReference.cache
+C:\Users\Oskar\Documents\GeneracjaDanychProgramix\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator\obj\Release\RandomDataGenerator.SaveToFileWindow.resources

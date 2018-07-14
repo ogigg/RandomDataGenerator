@@ -107,5 +107,16 @@ namespace RandomDataGenerator
             if (textB_Zip.Text != "")
                 Clipboard.SetText(textB_Zip.Text);
         }
+
+        private void wincyjToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void zapiszDoPlikuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveToFileWindow saveToFileWindow = new SaveToFileWindow();
+            saveToFileWindow.Show();
+        }
     }
 }

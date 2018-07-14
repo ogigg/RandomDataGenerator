@@ -44,16 +44,20 @@
             this.textB_Zip = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textB_City = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.wincyjToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zapiszDoPlikuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_RandAll
             // 
             this.btn_RandAll.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_RandAll.Location = new System.Drawing.Point(11, 180);
+            this.btn_RandAll.Location = new System.Drawing.Point(9, 201);
             this.btn_RandAll.Margin = new System.Windows.Forms.Padding(2);
             this.btn_RandAll.Name = "btn_RandAll";
-            this.btn_RandAll.Size = new System.Drawing.Size(203, 32);
+            this.btn_RandAll.Size = new System.Drawing.Size(201, 32);
             this.btn_RandAll.TabIndex = 0;
             this.btn_RandAll.Text = "Random All";
             this.btn_RandAll.UseVisualStyleBackColor = true;
@@ -63,11 +67,11 @@
             // 
             this.textB_FirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textB_FirstName.Location = new System.Drawing.Point(85, 11);
+            this.textB_FirstName.Location = new System.Drawing.Point(85, 32);
             this.textB_FirstName.Margin = new System.Windows.Forms.Padding(2);
             this.textB_FirstName.Name = "textB_FirstName";
             this.textB_FirstName.ReadOnly = true;
-            this.textB_FirstName.Size = new System.Drawing.Size(133, 20);
+            this.textB_FirstName.Size = new System.Drawing.Size(125, 20);
             this.textB_FirstName.TabIndex = 1;
             this.textB_FirstName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_FirstName_MouseClick);
             this.textB_FirstName.TextChanged += new System.EventHandler(this.textB_FirstName_TextChanged);
@@ -76,18 +80,18 @@
             // 
             this.textB_LastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textB_LastName.Location = new System.Drawing.Point(85, 35);
+            this.textB_LastName.Location = new System.Drawing.Point(85, 56);
             this.textB_LastName.Margin = new System.Windows.Forms.Padding(2);
             this.textB_LastName.Name = "textB_LastName";
             this.textB_LastName.ReadOnly = true;
-            this.textB_LastName.Size = new System.Drawing.Size(133, 20);
+            this.textB_LastName.Size = new System.Drawing.Size(125, 20);
             this.textB_LastName.TabIndex = 2;
             this.textB_LastName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_LastName_MouseClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 14);
+            this.label1.Location = new System.Drawing.Point(54, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 3;
@@ -97,7 +101,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 38);
+            this.label2.Location = new System.Drawing.Point(27, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 4;
@@ -108,7 +112,7 @@
             this.checkB_PolNames.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.checkB_PolNames.AutoSize = true;
-            this.checkB_PolNames.Location = new System.Drawing.Point(11, 217);
+            this.checkB_PolNames.Location = new System.Drawing.Point(11, 238);
             this.checkB_PolNames.Name = "checkB_PolNames";
             this.checkB_PolNames.Size = new System.Drawing.Size(107, 17);
             this.checkB_PolNames.TabIndex = 5;
@@ -119,7 +123,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 62);
+            this.label3.Location = new System.Drawing.Point(49, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 8;
@@ -129,18 +133,18 @@
             // 
             this.textB_Street.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textB_Street.Location = new System.Drawing.Point(85, 59);
+            this.textB_Street.Location = new System.Drawing.Point(85, 80);
             this.textB_Street.Margin = new System.Windows.Forms.Padding(2);
             this.textB_Street.Name = "textB_Street";
             this.textB_Street.ReadOnly = true;
-            this.textB_Street.Size = new System.Drawing.Size(133, 20);
+            this.textB_Street.Size = new System.Drawing.Size(125, 20);
             this.textB_Street.TabIndex = 7;
             this.textB_Street.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_Street_MouseClick);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 87);
+            this.label4.Location = new System.Drawing.Point(42, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 10;
@@ -150,18 +154,18 @@
             // 
             this.textB_Number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textB_Number.Location = new System.Drawing.Point(85, 84);
+            this.textB_Number.Location = new System.Drawing.Point(85, 105);
             this.textB_Number.Margin = new System.Windows.Forms.Padding(2);
             this.textB_Number.Name = "textB_Number";
             this.textB_Number.ReadOnly = true;
-            this.textB_Number.Size = new System.Drawing.Size(133, 20);
+            this.textB_Number.Size = new System.Drawing.Size(125, 20);
             this.textB_Number.TabIndex = 9;
             this.textB_Number.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_Number_MouseClick);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 135);
+            this.label5.Location = new System.Drawing.Point(6, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 13);
             this.label5.TabIndex = 12;
@@ -171,18 +175,18 @@
             // 
             this.textB_State.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textB_State.Location = new System.Drawing.Point(85, 132);
+            this.textB_State.Location = new System.Drawing.Point(85, 153);
             this.textB_State.Margin = new System.Windows.Forms.Padding(2);
             this.textB_State.Name = "textB_State";
             this.textB_State.ReadOnly = true;
-            this.textB_State.Size = new System.Drawing.Size(133, 20);
+            this.textB_State.Size = new System.Drawing.Size(125, 20);
             this.textB_State.TabIndex = 11;
             this.textB_State.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_State_MouseClick);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 159);
+            this.label6.Location = new System.Drawing.Point(6, 180);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 13);
             this.label6.TabIndex = 14;
@@ -192,18 +196,18 @@
             // 
             this.textB_Zip.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textB_Zip.Location = new System.Drawing.Point(85, 156);
+            this.textB_Zip.Location = new System.Drawing.Point(85, 177);
             this.textB_Zip.Margin = new System.Windows.Forms.Padding(2);
             this.textB_Zip.Name = "textB_Zip";
             this.textB_Zip.ReadOnly = true;
-            this.textB_Zip.Size = new System.Drawing.Size(133, 20);
+            this.textB_Zip.Size = new System.Drawing.Size(125, 20);
             this.textB_Zip.TabIndex = 13;
             this.textB_Zip.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_Zip_MouseClick);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(42, 111);
+            this.label7.Location = new System.Drawing.Point(42, 132);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 16;
@@ -213,19 +217,45 @@
             // 
             this.textB_City.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textB_City.Location = new System.Drawing.Point(85, 108);
+            this.textB_City.Location = new System.Drawing.Point(85, 129);
             this.textB_City.Margin = new System.Windows.Forms.Padding(2);
             this.textB_City.Name = "textB_City";
             this.textB_City.ReadOnly = true;
-            this.textB_City.Size = new System.Drawing.Size(133, 20);
+            this.textB_City.Size = new System.Drawing.Size(125, 20);
             this.textB_City.TabIndex = 15;
             this.textB_City.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_City_MouseClick);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wincyjToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(226, 24);
+            this.menuStrip1.TabIndex = 17;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // wincyjToolStripMenuItem
+            // 
+            this.wincyjToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zapiszDoPlikuToolStripMenuItem});
+            this.wincyjToolStripMenuItem.Name = "wincyjToolStripMenuItem";
+            this.wincyjToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.wincyjToolStripMenuItem.Text = "Wincyj";
+            this.wincyjToolStripMenuItem.Click += new System.EventHandler(this.wincyjToolStripMenuItem_Click);
+            // 
+            // zapiszDoPlikuToolStripMenuItem
+            // 
+            this.zapiszDoPlikuToolStripMenuItem.Name = "zapiszDoPlikuToolStripMenuItem";
+            this.zapiszDoPlikuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zapiszDoPlikuToolStripMenuItem.Text = "Zapisz Do Pliku";
+            this.zapiszDoPlikuToolStripMenuItem.Click += new System.EventHandler(this.zapiszDoPlikuToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 236);
+            this.ClientSize = new System.Drawing.Size(226, 260);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textB_City);
             this.Controls.Add(this.label6);
@@ -242,11 +272,15 @@
             this.Controls.Add(this.textB_LastName);
             this.Controls.Add(this.textB_FirstName);
             this.Controls.Add(this.btn_RandAll);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(0, 275);
+            this.MinimumSize = new System.Drawing.Size(16, 275);
             this.Name = "Form1";
             this.Text = "Generator Danych Losowych by Oskar v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,6 +304,9 @@
         private System.Windows.Forms.TextBox textB_Zip;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textB_City;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem wincyjToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zapiszDoPlikuToolStripMenuItem;
     }
 }
 
