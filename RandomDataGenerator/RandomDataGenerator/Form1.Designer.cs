@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_RandAll = new System.Windows.Forms.Button();
             this.textB_FirstName = new System.Windows.Forms.TextBox();
             this.textB_LastName = new System.Windows.Forms.TextBox();
@@ -57,7 +58,7 @@
             this.btn_RandAll.Location = new System.Drawing.Point(9, 201);
             this.btn_RandAll.Margin = new System.Windows.Forms.Padding(2);
             this.btn_RandAll.Name = "btn_RandAll";
-            this.btn_RandAll.Size = new System.Drawing.Size(201, 32);
+            this.btn_RandAll.Size = new System.Drawing.Size(213, 32);
             this.btn_RandAll.TabIndex = 0;
             this.btn_RandAll.Text = "Random All";
             this.btn_RandAll.UseVisualStyleBackColor = true;
@@ -71,7 +72,7 @@
             this.textB_FirstName.Margin = new System.Windows.Forms.Padding(2);
             this.textB_FirstName.Name = "textB_FirstName";
             this.textB_FirstName.ReadOnly = true;
-            this.textB_FirstName.Size = new System.Drawing.Size(125, 20);
+            this.textB_FirstName.Size = new System.Drawing.Size(137, 20);
             this.textB_FirstName.TabIndex = 1;
             this.textB_FirstName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_FirstName_MouseClick);
             this.textB_FirstName.TextChanged += new System.EventHandler(this.textB_FirstName_TextChanged);
@@ -84,7 +85,7 @@
             this.textB_LastName.Margin = new System.Windows.Forms.Padding(2);
             this.textB_LastName.Name = "textB_LastName";
             this.textB_LastName.ReadOnly = true;
-            this.textB_LastName.Size = new System.Drawing.Size(125, 20);
+            this.textB_LastName.Size = new System.Drawing.Size(137, 20);
             this.textB_LastName.TabIndex = 2;
             this.textB_LastName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_LastName_MouseClick);
             // 
@@ -137,7 +138,7 @@
             this.textB_Street.Margin = new System.Windows.Forms.Padding(2);
             this.textB_Street.Name = "textB_Street";
             this.textB_Street.ReadOnly = true;
-            this.textB_Street.Size = new System.Drawing.Size(125, 20);
+            this.textB_Street.Size = new System.Drawing.Size(137, 20);
             this.textB_Street.TabIndex = 7;
             this.textB_Street.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_Street_MouseClick);
             // 
@@ -158,7 +159,7 @@
             this.textB_Number.Margin = new System.Windows.Forms.Padding(2);
             this.textB_Number.Name = "textB_Number";
             this.textB_Number.ReadOnly = true;
-            this.textB_Number.Size = new System.Drawing.Size(125, 20);
+            this.textB_Number.Size = new System.Drawing.Size(137, 20);
             this.textB_Number.TabIndex = 9;
             this.textB_Number.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_Number_MouseClick);
             // 
@@ -179,7 +180,7 @@
             this.textB_State.Margin = new System.Windows.Forms.Padding(2);
             this.textB_State.Name = "textB_State";
             this.textB_State.ReadOnly = true;
-            this.textB_State.Size = new System.Drawing.Size(125, 20);
+            this.textB_State.Size = new System.Drawing.Size(137, 20);
             this.textB_State.TabIndex = 11;
             this.textB_State.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_State_MouseClick);
             // 
@@ -200,7 +201,7 @@
             this.textB_Zip.Margin = new System.Windows.Forms.Padding(2);
             this.textB_Zip.Name = "textB_Zip";
             this.textB_Zip.ReadOnly = true;
-            this.textB_Zip.Size = new System.Drawing.Size(125, 20);
+            this.textB_Zip.Size = new System.Drawing.Size(137, 20);
             this.textB_Zip.TabIndex = 13;
             this.textB_Zip.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_Zip_MouseClick);
             // 
@@ -221,7 +222,7 @@
             this.textB_City.Margin = new System.Windows.Forms.Padding(2);
             this.textB_City.Name = "textB_City";
             this.textB_City.ReadOnly = true;
-            this.textB_City.Size = new System.Drawing.Size(125, 20);
+            this.textB_City.Size = new System.Drawing.Size(137, 20);
             this.textB_City.TabIndex = 15;
             this.textB_City.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textB_City_MouseClick);
             // 
@@ -231,7 +232,7 @@
             this.wincyjToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(226, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(233, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -255,7 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(226, 260);
+            this.ClientSize = new System.Drawing.Size(233, 260);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textB_City);
             this.Controls.Add(this.label6);
@@ -273,6 +274,7 @@
             this.Controls.Add(this.textB_FirstName);
             this.Controls.Add(this.btn_RandAll);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(16, 275);

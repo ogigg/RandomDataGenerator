@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SaveToFileWindow));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.textB_Spacer = new System.Windows.Forms.TextBox();
+            this.checkB_Name = new System.Windows.Forms.CheckBox();
+            this.checkB_LastName = new System.Windows.Forms.CheckBox();
+            this.checkB_Street = new System.Windows.Forms.CheckBox();
+            this.checkB_City = new System.Windows.Forms.CheckBox();
+            this.checkB_Number = new System.Windows.Forms.CheckBox();
+            this.checkB_State = new System.Windows.Forms.CheckBox();
+            this.checkB_Zip = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.checkB_PolNames = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -60,127 +63,173 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Rozdzielenie";
             // 
-            // textBox1
+            // textB_Spacer
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 20);
-            this.textBox1.TabIndex = 2;
+            this.textB_Spacer.Location = new System.Drawing.Point(93, 34);
+            this.textB_Spacer.Name = "textB_Spacer";
+            this.textB_Spacer.Size = new System.Drawing.Size(48, 20);
+            this.textB_Spacer.TabIndex = 3;
+            this.textB_Spacer.Text = " ";
             // 
-            // textBox2
+            // checkB_Name
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(32, 20);
-            this.textBox2.TabIndex = 3;
+            this.checkB_Name.AutoSize = true;
+            this.checkB_Name.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_Name.Checked = true;
+            this.checkB_Name.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_Name.Location = new System.Drawing.Point(12, 65);
+            this.checkB_Name.Name = "checkB_Name";
+            this.checkB_Name.Size = new System.Drawing.Size(45, 17);
+            this.checkB_Name.TabIndex = 4;
+            this.checkB_Name.Text = "Imię";
+            this.checkB_Name.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // checkB_LastName
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.checkBox1.Location = new System.Drawing.Point(12, 65);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(45, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Imię";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkB_LastName.AutoSize = true;
+            this.checkB_LastName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_LastName.Checked = true;
+            this.checkB_LastName.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_LastName.Location = new System.Drawing.Point(12, 88);
+            this.checkB_LastName.Name = "checkB_LastName";
+            this.checkB_LastName.Size = new System.Drawing.Size(72, 17);
+            this.checkB_LastName.TabIndex = 5;
+            this.checkB_LastName.Text = "Nazwisko";
+            this.checkB_LastName.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkB_Street
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.checkBox2.Location = new System.Drawing.Point(12, 88);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 17);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Nazwisko";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkB_Street.AutoSize = true;
+            this.checkB_Street.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_Street.Checked = true;
+            this.checkB_Street.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_Street.Location = new System.Drawing.Point(12, 111);
+            this.checkB_Street.Name = "checkB_Street";
+            this.checkB_Street.Size = new System.Drawing.Size(50, 17);
+            this.checkB_Street.TabIndex = 6;
+            this.checkB_Street.Text = "Ulica";
+            this.checkB_Street.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkB_City
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.checkBox3.Location = new System.Drawing.Point(12, 111);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(50, 17);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Ulica";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkB_City.AutoSize = true;
+            this.checkB_City.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_City.Checked = true;
+            this.checkB_City.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_City.Location = new System.Drawing.Point(12, 157);
+            this.checkB_City.Name = "checkB_City";
+            this.checkB_City.Size = new System.Drawing.Size(57, 17);
+            this.checkB_City.TabIndex = 7;
+            this.checkB_City.Text = "Miasto";
+            this.checkB_City.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkB_Number
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.checkBox4.Location = new System.Drawing.Point(12, 157);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(57, 17);
-            this.checkBox4.TabIndex = 7;
-            this.checkBox4.Text = "Miasto";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkB_Number.AutoSize = true;
+            this.checkB_Number.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_Number.Checked = true;
+            this.checkB_Number.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_Number.Location = new System.Drawing.Point(12, 134);
+            this.checkB_Number.Name = "checkB_Number";
+            this.checkB_Number.Size = new System.Drawing.Size(83, 17);
+            this.checkB_Number.TabIndex = 8;
+            this.checkB_Number.Text = "Numer Ulicy";
+            this.checkB_Number.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkB_State
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.checkBox5.Location = new System.Drawing.Point(12, 134);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(83, 17);
-            this.checkBox5.TabIndex = 8;
-            this.checkBox5.Text = "Numer Ulicy";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkB_State.AutoSize = true;
+            this.checkB_State.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_State.Checked = true;
+            this.checkB_State.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_State.Location = new System.Drawing.Point(12, 180);
+            this.checkB_State.Name = "checkB_State";
+            this.checkB_State.Size = new System.Drawing.Size(93, 17);
+            this.checkB_State.TabIndex = 9;
+            this.checkB_State.Text = "Wojewodztwo";
+            this.checkB_State.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // checkB_Zip
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.checkBox6.Location = new System.Drawing.Point(12, 180);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(93, 17);
-            this.checkBox6.TabIndex = 9;
-            this.checkBox6.Text = "Wojewodztwo";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.checkBox7.Location = new System.Drawing.Point(12, 203);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(94, 17);
-            this.checkBox7.TabIndex = 10;
-            this.checkBox7.Text = "Kod Pocztowy";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkB_Zip.AutoSize = true;
+            this.checkB_Zip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_Zip.Checked = true;
+            this.checkB_Zip.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_Zip.Location = new System.Drawing.Point(12, 203);
+            this.checkB_Zip.Name = "checkB_Zip";
+            this.checkB_Zip.Size = new System.Drawing.Size(94, 17);
+            this.checkB_Zip.TabIndex = 10;
+            this.checkB_Zip.Text = "Kod Pocztowy";
+            this.checkB_Zip.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(176, 7);
+            this.button1.Location = new System.Drawing.Point(156, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(92, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Zapisz";
+            this.button1.Text = "Zapisz do pliku";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form2
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(93, 8);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.numericUpDown1.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown1.TabIndex = 12;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // checkB_PolNames
+            // 
+            this.checkB_PolNames.AutoSize = true;
+            this.checkB_PolNames.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.checkB_PolNames.Checked = true;
+            this.checkB_PolNames.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkB_PolNames.Location = new System.Drawing.Point(156, 33);
+            this.checkB_PolNames.Name = "checkB_PolNames";
+            this.checkB_PolNames.Size = new System.Drawing.Size(107, 17);
+            this.checkB_PolNames.TabIndex = 13;
+            this.checkB_PolNames.Text = "Polskie nazwiska";
+            this.checkB_PolNames.UseVisualStyleBackColor = true;
+            // 
+            // SaveToFileWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 242);
+            this.ClientSize = new System.Drawing.Size(260, 224);
+            this.Controls.Add(this.checkB_PolNames);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.checkB_Zip);
+            this.Controls.Add(this.checkB_State);
+            this.Controls.Add(this.checkB_Number);
+            this.Controls.Add(this.checkB_City);
+            this.Controls.Add(this.checkB_Street);
+            this.Controls.Add(this.checkB_LastName);
+            this.Controls.Add(this.checkB_Name);
+            this.Controls.Add(this.textB_Spacer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "SaveToFileWindow";
             this.Text = "Zapisz do pliku-konfiguracja";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,15 +239,16 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.TextBox textB_Spacer;
+        private System.Windows.Forms.CheckBox checkB_Name;
+        private System.Windows.Forms.CheckBox checkB_LastName;
+        private System.Windows.Forms.CheckBox checkB_Street;
+        private System.Windows.Forms.CheckBox checkB_City;
+        private System.Windows.Forms.CheckBox checkB_Number;
+        private System.Windows.Forms.CheckBox checkB_State;
+        private System.Windows.Forms.CheckBox checkB_Zip;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.CheckBox checkB_PolNames;
     }
 }

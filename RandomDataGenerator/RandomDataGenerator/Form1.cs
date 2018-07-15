@@ -13,11 +13,11 @@ namespace RandomDataGenerator
 {
     public partial class Form1 : Form
     {
-        string[] FirstName_S = File.ReadAllText("FirstNames.txt", Encoding.Default).Split('\n');
-        string[] LastName_S = File.ReadAllText("LastNames.txt", Encoding.Default).Split('\n');
-        string[] Street_S = File.ReadAllText("Streets.txt", Encoding.Default).Split('\n');
-        string[] City_S = File.ReadAllText("Cities.txt", Encoding.Default).Split('\n');
-        string[] State_S = File.ReadAllText("States.txt", Encoding.Default).Split('\n');
+        public string[] FirstName_S = File.ReadAllText("FirstNames.txt", Encoding.Default).Split('\n');
+        public string[] LastName_S = File.ReadAllText("LastNames.txt", Encoding.Default).Split('\n');
+        public string[] Street_S = File.ReadAllText("Streets.txt", Encoding.Default).Split('\n');
+        public string[] City_S = File.ReadAllText("Cities.txt", Encoding.Default).Split('\n');
+        public string[] State_S = File.ReadAllText("States.txt", Encoding.Default).Split('\n');
         public Form1()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace RandomDataGenerator
             Random rnd = new Random();
             textB_FirstName.Text = FirstName_S[rnd.Next(0,100)];
             textB_LastName.Text = LastName_S[rnd.Next(0, 100)];
-            textB_Number.Text = rnd.Next(0, 100).ToString();
+            textB_Number.Text = rnd.Next(1, 100).ToString();
             textB_Street.Text = Street_S[rnd.Next(0, Street_S.Length-1)];
             textB_City.Text = City_S[rnd.Next(0, City_S.Length - 1)];
             textB_State.Text = State_S[rnd.Next(0, State_S.Length - 1)];
